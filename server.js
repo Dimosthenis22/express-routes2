@@ -8,15 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
-
 app.use("/products/toys",products)
-
-app.get('/', (res,req)=>{
-    res.send("hello world");
-})
-
-
-
 
 
 app.listen(4000, ()=>console.log("Port is listening: 4000"));
